@@ -22,7 +22,7 @@ public class JSONParser {
 	      is = new URL(url).openStream();
 	      BufferedReader rd = new BufferedReader(new InputStreamReader(is, Charset.forName("UTF-8")));
 	      String jsonText = readAll(rd);
-	      LOGGER.info(jsonText);
+	      //LOGGER.info(jsonText);
 	      
 	      json = new JSONObject(jsonText);
 	    } catch (IOException ie) {
